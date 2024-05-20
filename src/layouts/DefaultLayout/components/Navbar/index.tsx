@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-import { Icon } from "../Icon";
-import { variants as buttonVariants } from "../ui/Button/variants";
+import { Icon } from "@/components/Icon";
+import { variants as buttonVariants } from "@/components/ui/Button/variants";
 
 const Navbar: React.FC = () => {
   const user = false;
