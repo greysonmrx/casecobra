@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 
-function constructMetadata(): Metadata {
-  const title = "CaseCobra | Premium Custom Phone Cases";
-  const description =
-    "Design your own premium phone case with CaseCobra. Our easy-to-use platform allows you to create custom, high-quality cases that express your unique style. Start designing today!";
-  const image = "/thumbnail.png";
-
+function constructMetadata(
+  title = "CaseCobra - Premium Custom Phone Cases",
+  description = "Design your own premium phone case with CaseCobra. Our easy-to-use platform allows you to create custom, high-quality cases that express your unique style. Start designing today!",
+  image = "/thumbnail.png"
+): Metadata {
   return {
     title,
     description,
