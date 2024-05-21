@@ -8,7 +8,7 @@ import { AspectRatio } from "@/components/AspectRatio";
 import { cn } from "@/utils/cn";
 
 const colors: Record<CaseColor, string> = {
-  BLACK: "bg-zinc-950",
+  BLACK: "bg-zinc-900",
   BLUE: "bg-blue-950",
   ROSE: "bg-rose-950",
 };
