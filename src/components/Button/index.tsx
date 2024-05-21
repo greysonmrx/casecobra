@@ -1,15 +1,10 @@
 import React from "react";
+import type { VariantProps } from "tailwind-variants";
 
 import { variants } from "./variants";
 
-export type IButtonSize = "default" | "sm" | "lg" | "icon";
-export type IButtonVariant =
-  | "default"
-  | "destructive"
-  | "outline"
-  | "secondary"
-  | "ghost"
-  | "link";
+export type IButtonSize = VariantProps<typeof variants>["size"];
+export type IButtonVariant = VariantProps<typeof variants>["variant"];
 
 interface RootProps extends React.ComponentProps<"button"> {
   isLoading?: boolean;

@@ -1,7 +1,18 @@
 import React from "react";
 import * as LucideIcons from "lucide-react";
 
-export type IconName = "arrow-right" | "check" | "star" | "underline";
+export type IconName =
+  | "arrow-right"
+  | "check"
+  | "star"
+  | "underline"
+  | "mouse-pointer-square-dashed"
+  | "loader-2"
+  | "image"
+  | "x"
+  | "chevron-right"
+  | "dot"
+  | "chevrons-up-down";
 
 export interface IconProps extends LucideIcons.LucideProps {
   name: IconName;
@@ -9,8 +20,17 @@ export interface IconProps extends LucideIcons.LucideProps {
 
 const Icons: Record<IconName, React.FC<LucideIcons.LucideProps>> = {
   "arrow-right": (props) => <LucideIcons.ArrowRight {...props} />,
+  "mouse-pointer-square-dashed": (props) => (
+    <LucideIcons.MousePointerSquareDashed {...props} />
+  ),
+  "loader-2": (props) => <LucideIcons.Loader2 {...props} />,
+  image: (props) => <LucideIcons.Image {...props} />,
+  x: (props) => <LucideIcons.X {...props} />,
   check: (props) => <LucideIcons.Check {...props} />,
   star: (props) => <LucideIcons.Star {...props} />,
+  "chevron-right": (props) => <LucideIcons.ChevronRight {...props} />,
+  dot: (props) => <LucideIcons.Dot {...props} />,
+  "chevrons-up-down": (props) => <LucideIcons.ChevronsUpDown {...props} />,
   underline: (props) => (
     <svg {...props} viewBox="0 0 687 155">
       <g
