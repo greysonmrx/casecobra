@@ -40,13 +40,11 @@ const StatusDropdown: React.FC<StatusDropdownProps> = ({ id, orderStatus }) => {
           variant="outline"
           className="w-52 flex justify-between items-center"
         >
-          <Button.Text>
-            {LABEL_MAP[orderStatus]}
-            <Icon
-              name="chevrons-up-down"
-              className="ml-2 h-4 w-4 shrink-0 opacity-50"
-            />
-          </Button.Text>
+          <Button.Text>{LABEL_MAP[orderStatus]}</Button.Text>
+          <Icon
+            name="chevrons-up-down"
+            className="ml-2 h-4 w-4 shrink-0 opacity-50"
+          />
         </Button.Root>
       </DropdownMenu.Trigger>
       <DropdownMenu.Content className="p-0">
