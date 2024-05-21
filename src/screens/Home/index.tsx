@@ -3,8 +3,9 @@ import Link from "next/link";
 
 import { Icon } from "@/components/Icon";
 import { Phone } from "@/components/Phone";
-import { Reviews } from "@/components/Reviews";
-import { variants as buttonVariants } from "@/components/ui/Button/variants";
+import { variants as buttonVariants } from "@/components/Button/variants";
+
+import { Reviews } from "./components/Reviews";
 
 const Home: React.FC = () => {
   return (
